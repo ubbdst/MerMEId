@@ -1,5 +1,4 @@
+xquery version "3.1";
+declare namespace sm="http://exist-db.org/xquery/securitymanager";
 
-xquery version "3.0";
-import module namespace sm="http://exist-db.org/xquery/securitymanager"
-
-{sm:chmod("/db/mermeid/xchmod.xq", "rxrxx");} 
+sm:chmod(xs:anyURI("/db/mermeid/xchmod.xq"), "+x") 
